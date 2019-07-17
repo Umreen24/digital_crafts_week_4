@@ -1,0 +1,91 @@
+
+body{
+    background-color: white;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+}
+
+#enter{
+    display: flex;
+    justify-content: center;
+    background-color: #6DB4E8;
+    align-items: center;
+}
+
+div span{
+    color: white;
+    margin-right: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#createTaskTextBox{
+    margin-right: 40px;
+    background-color: floralwhite;
+    outline-color: black;
+}
+
+#saveTaskButton{
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: medium;
+}
+
+h3{
+    background-color:white;
+    color: black;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+#pendingTasksDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pendingTasksDiv div{
+    display: flex;
+    color: white;
+    background-color: 6DB4E8;
+    font-family: sans-serif;
+    align-items: center;
+    font-weight: 500;
+    width: 200px;
+    height: 50px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#completedTasksDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#completedTasksDiv div{
+    display: flex;
+    color: white;
+    background-color: 6DB4E8;
+    font-family: sans-serif;
+    align-items: center;
+    font-weight: 500;
+    width: 200px;
+    height: 50px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#pendingTasksDiv button{
+    margin-left: 50px;
+}
+
+#completedTasksDiv button{
+    margin-left: 50px;
+}
+

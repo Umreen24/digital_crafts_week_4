@@ -36,6 +36,39 @@ for(let index = 0; index<names.length; index++){
 }
 console.log(newNames)
 
+//let names = ["Alex","Mary","John","Mary", "Alex", "Jerry"]
+
+let duplicateFreeArray = [] 
+
+function doesNameExists(name) {
+    
+  let alreadyExists = false 
+  
+  for(let index =0; index < duplicateFreeArray.length; index++) {
+    if(name == duplicateFreeArray[index]) {
+      alreadyExists = true 
+      break
+    }
+  }
+  
+  return alreadyExists
+  
+}
+
+for(let index = 0; index < names.length; index++) {
+  
+    let name = names[index]
+    // if the name does not exists in duplicateFreeArray
+    if(!doesNameExists(name)) {
+       duplicateFreeArray.push(name)
+    }
+  
+}
+
+console.log(duplicateFreeArray)
+
+//console.log(!false)
+
 // true/false if item in array 
 
 let array = [5, 7, 10, 293, 593, 2]
