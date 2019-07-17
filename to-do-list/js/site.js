@@ -9,9 +9,8 @@ addButton.addEventListener('click', function() {
 
     let task = createTask.value
     createTask.value = ""
-
+    
     let pendingTask = document.createElement("div")
-    pendingTask.innerHTML = task
 
     let checkTask = document.createElement("input")
     checkTask.type = "checkbox"
@@ -20,6 +19,9 @@ addButton.addEventListener('click', function() {
         }else if(this.checked == false) {pendingTasks.appendChild(this.parentElement)}
     })
 
+    let taskName = document.createElement("h5")
+    taskName.innerHTML = task
+
     let removeButton = document.createElement("button")
     removeButton.innerHTML = "Remove"
     removeButton.addEventListener('click', function(){
@@ -27,6 +29,8 @@ addButton.addEventListener('click', function() {
     })
 
     pendingTask.appendChild(checkTask)
+    pendingTask.appendChild(taskName)
     pendingTask.appendChild(removeButton)
+
     pendingTasksDiv.appendChild(pendingTask)
 })
