@@ -1,0 +1,64 @@
+
+body{
+    background-color: #89E8E2;ß
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+}
+
+#newsDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+#newsDiv div{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFDF5;
+    margin-top: 25px;
+    padding: 20px;
+}
+
+h1{
+    color: #EB7A5A;
+    background-color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.summaryOfPage{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+.storyDescription{
+    font-family: sans-serif;
+    font-weight: lighter;
+    text-align: left;
+    margin-top: 5px;
+
+}
+
+.author{
+    font-family: sans-serif;
+}
+
+.storyImages{
+    width: 50%;
+    height: 50%;
+}
+
+h2{
+    font-family: sans-serif;
+    font-weight: lighter;
+    margin-top: 50px;
+}
+
+h4{
+    font-weight: lighter;
+    margin-top: -30px;
+}
